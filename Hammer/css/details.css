@@ -1,0 +1,470 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+body {
+	background-color: #ededed;
+}
+#body{
+	height: 561px;
+	width: 1220px;
+	margin: 0 auto;
+	background-color: #FFF;
+	box-sizing: border-box;
+	padding: 60px;
+	margin-top: 25px;
+	overflow: hidden;
+	border-radius: 8px;
+	position: relative;
+	border: 1px solid #dcdcdc;
+}
+#body .bodyPart1{
+	float: left;
+}
+#body .bodyPart1 .panter1 li{
+	height: 54px;
+	width: 54px;
+	padding: 10px;
+	margin-top: 10px;
+	border: 1px solid #f0f0f0;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#body .bodyPart1 .panter1 li img{
+	height: auto;
+	width: 100%;
+}
+#body .bodyPart1 .panter2{
+	position: relative;
+	z-index: 10;
+}
+
+#body .bodyPart1 .panter2 .p1{
+	height: 200px;
+	width: 200px;
+	margin-left: 20px;
+	top: -300px;
+	left: 150px;
+	cursor: pointer;
+	position: absolute;
+	display: block;
+}
+/* 设置放大镜的小块 */
+#body .bodyPart1 .panter2 .p1 .mask{
+	height: 100px;
+	width: 100px;
+	background-color: #8B0000;
+	opacity: 0.4;
+	position: absolute;
+	top: 0;
+	/* float: left; */
+	display: none;
+}
+/* 设置放大镜大框 */
+#body .bodyPart1 .panter2 .max{
+	height: 400px;
+	width: 400px;
+	position: absolute;
+	/* background-color: #0077AA; */
+	top:-310px;
+	left: 450px;
+	overflow: hidden;
+	display: none;
+}
+#body .bodyPart1 .panter2 .max img{
+	height: 600px;
+	width: 600px;
+	position: absolute;
+}
+#body .bodyPart1 .panter2 .p1 img{
+	/* display: block; */
+	height: auto;
+	width: 100%;
+}
+/* 文字区 */
+#body .bodyPart2{
+	position: relative;
+	/* background-color: #0077AA; */
+}
+#body .bodyPart2 .artical{
+	/* background-color: #0077AA; */
+	float: left;
+	position: absolute;
+	right: 20px;
+	/* margin-top: 40px; */
+	width: 610px;
+	border-bottom: 1px solid rgba(0,0,0, .08);
+}
+#body .bodyPart2 .artical h1{
+	/* width: 240px; */
+	font-size: 24px;
+	line-height: 30px;
+	color: #000000;
+	padding-bottom: 20px;
+	font-weight: 400;
+}
+#body .bodyPart2 .artical h2{
+	color: #999;
+	font-size: 14px;
+	padding-bottom: 28px;
+	font-weight: 400;
+}
+#body .bodyPart2 .artical span{
+	position: absolute;
+	right: 100px;
+	top: 50px;
+	color: #d44d44;
+	font-weight: 700;
+	font-size: 24px;	
+}
+/* 按钮 */
+#body .bodyPart2 .button{
+	position: relative;
+	padding-top: 30px;
+	top: 104px;
+	left: -541px;
+	/* background-color: #0077AA; */
+	margin-top: 40px;
+	
+}
+#body .bodyPart2 .button  .b3{
+	position: absolute;
+	right:0;
+	width: 89px;
+	height: 39px;
+	line-height: 39px;
+	color: #666;
+	font-weight: 400;
+	font-size: 14px;
+	float: left;
+	/* background-color: #0077AA; */
+}
+#body .bodyPart2 .button .b1{
+	height: 36px;
+	width: 36px;
+	right: -39px;
+	display: block;
+	border-radius: 50%;
+	position:absolute;
+	cursor: pointer;
+	border: 2px solid #e5e5e5;
+	/* background-color: #333333; */
+}
+#body .bodyPart2 .button .b2{
+	height: 36px;
+	width: 36px;
+	right: -112px;
+	display: block;
+	border-radius: 50%;
+	
+	position:absolute;
+	cursor: pointer;
+	border: 2px solid #e5e5e5;
+	/* background-color: #333333; */
+}
+#body .bodyPart2 .button .b2 img{
+	display: block;
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	left: 5px;
+	top: 4px;
+	border-radius: 50%;
+}
+#body .bodyPart2 .line{
+	border-bottom: 1px solid rgba(0,0,0, .08);
+	display: block;
+	width: 608px;
+	position: absolute;
+	right: 21px;
+	top: 213px;
+}
+#body .bodyPart2 .number{
+	position: absolute;
+	width: 605px;
+	height: 28px;
+	right:24px;
+	top: 216px;
+	margin-top: 40px;
+	/* background-color: #0077AA; */
+	padding-bottom: 40px;
+	border-bottom: 1px solid rgba(0,0,0, .08);
+}
+#body .bodyPart2 .number span{
+	color: #666;
+	font-size: 14px;
+	line-height: 28px;
+}
+#body .bodyPart2 .number .addBtn{
+	height: 30px;
+	cursor: pointer;
+	width: 30px;
+	position: absolute;
+	top: 0;
+	left: 100px;
+	/* background-color: #0077AA; */
+	border: 1px solid rgba(0,0,0, .08);
+	border-radius: 50%;
+	font-size: 25px;
+	color: #666;
+	line-height: 30px;
+	text-align: center;
+	box-shadow: ;
+}
+#body .bodyPart2 .number .minBtn{
+	cursor:pointer;
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: 0;
+	left: 180px;
+	/* background-color: #0077AA; */
+	border: 1px solid rgba(0,0,0, .08);
+	border-radius: 50%;
+	font-size: 20px;
+	color: #666666;
+	line-height: 30px;
+	text-align: center;
+	box-shadow: ;
+}
+#body .bodyPart2 .number .a1{
+	position: absolute;
+	left: 150px;
+	font-weight: 600;
+}
+#body .bodyPart2 .serve{
+	position: absolute;
+	right: 22px;
+	top: 355px;
+	width: 608px;
+	border-bottom: 1px solid rgba(0,0,0, .08);
+}
+#body .bodyPart2 .serve span{
+	color: #666;
+	font-size: 14px;
+	float: left;
+}
+#body .bodyPart2 .serve .s1{
+	float: left;
+	color: #999;
+	font-size: 12px;
+	margin-left: 30px;
+	padding-bottom: 30px;
+}
+#local{
+	height: 162px;
+	width: 82px;
+	position: fixed;
+	right: 24px;
+	z-index: 100;
+	top: 50%;
+	background-color: #FFFFFF;
+	box-shadow: 0 5px 8px rgba(0,0,0, .15);
+	border-radius: 8px;
+}
+/* 客服 */
+#local .kf{
+	height:81px;
+	width:83px ;
+	cursor: pointer;
+	position: relative;
+	border-bottom: 1px solid rgba(0,0,0, .08);
+}
+#local .kf:hover h3{
+	color: #55A532;
+	font-weight: 400;
+	background-color: #fafafa;
+}
+#local .kf:hover{
+	background-color: #fafafa;
+}
+#local .kf p img{
+	display: block;
+	position: absolute;
+	left: 24px;
+	top: 6px;
+	width: 36px;
+	height: 36px;
+	/* background-color: #0077AA; */
+	color: #000000;
+} 
+#local .kf h3{
+	color: #666666;
+	position: absolute;
+	display: block;
+	bottom: 10px;
+	left: 15px;
+	font-size: 13.5px;
+}
+#local .top{
+	height:81px;
+	width:83px ;
+	cursor: pointer;
+	position: relative;
+}
+#local .top p img{
+	display: block;
+	position: absolute;
+	left: 24px;
+	top: 8px;
+	width: 36px;
+	height: 36px;
+	/* background-color: #0077AA; */
+	color: #000000;
+} 
+#local .top h3{
+	color: #666666;
+	position: absolute;
+	display: block;
+	bottom: 10px;
+	left: 15px;
+	font-size: 13.5px;
+}
+#local .top:hover{
+	background-color: #fafafa;
+}
+#local .top:hover h3{
+	color: #D44D44;
+	font-weight: 400;
+}
+/* 底部固定 */
+#bottom{
+	height: 60px;
+	width: 100%;
+	position: sticky;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	/* position: relative; */
+	background-color: #fafafa;
+	border-bottom: 1px solid rgba(0,0,0, .08);
+	z-index: 25;
+	border-top: 1px solid #e3e3e3;
+	box-shadow: 0 -1px 3px rgba(0,0,0, .04);
+}
+#bottom .control{
+	width: 1220px;
+	height: 60px;
+	position: relative;
+	margin: 0 auto;
+	/* background-color: #0077AA; */
+}
+#bottom .control .ha{
+	font-weight: 700;
+	font-size: 12px;
+	padding-top: 8px;
+	color: #707070;
+}
+#bottom .control .change {
+	margin-right: 20px;
+	font-size: 14px;
+	position: absolute;
+	left: 70px;
+	top: 0px;
+}
+#bottom .control .change .he{
+	width: 220px;
+	padding-top: 8px;
+	color: #707070;
+	font-weight: 700;
+	font-size: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#bottom .control .change .thing{
+	position: absolute;
+	left: 222px;
+	top: 8px;
+	color: #707070;
+	font-weight: 700;
+}
+#bottom .control .change h2{
+	font-size: 12px;
+	color: #9d9d9d;
+	font-weight: 400;
+	margin-top: 5px;
+}
+#bottom  .btnOdd{
+	position: absolute;
+	top: 10px;
+	right: 0;
+	width: 118px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	color: #FFFDEF;
+	cursor: pointer;
+	border-radius: 6px;
+	background-color: #6383e6;
+	background-image: linear-gradient(#6383c6,#4262af);
+}
+#bottom  .buyBtn{
+	position: absolute;
+	top: 10px;
+	right: 128px;
+	width: 118px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	color: #646464;
+	cursor: pointer;
+	border-radius: 6px;
+	background-color: #f8f8f8;
+	font-weight: 400;
+	background-image: linear-gradient(#f4f4f4,#f5f5f5);
+	border: 1px solid rgba(0,0,0, .08);
+}
+#bottom .control .dollor{
+	position: absolute;
+	right: 273px;
+	top:18px;
+}
+#bottom .control .dollor span{
+	font-size: 20px;
+	font-weight: 700;
+	color: #D44D44;
+	
+}
+/* 详情照片 */
+#picture{
+	height: 7000px;
+	width: 1220px;
+	margin: 0 auto;
+	border: 1px solid rgba(0,0,0, .08);
+	border-radius: 8px;
+	margin-top: 40px;
+}
+#picture img{
+	width: 1220px;
+	height:7000px ;
+	/* margin-top: 40px; */
+}
+#jump{
+	height: 50px;
+	width: 100px;
+	margin: 0 auto;
+	background-color: #D44D44;
+	color: #BD2C00;
+	border-radius: 6px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 14px;
+	position: fixed;
+	bottom: 100px;
+	left: 50%;
+	display: none;
+}

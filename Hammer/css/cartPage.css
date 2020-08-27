@@ -1,0 +1,331 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+body {
+	background-color: #ededed;
+}
+#cartPart{
+	min-height: 321px;
+	width: 1220px;
+	background-color: #FFFFFF;
+	margin: 0 auto;
+	border-radius: 8px;
+	overflow: hidden;
+	margin-top: 100px;
+	margin-bottom: 40px;
+}
+#cartPart .listing{
+	height:61px;
+	width: 1218px;
+	border-bottom: 1px solid rgba(0,0,0, .08);
+	/* background-color: #404040; */
+}
+#cartPart .listing h3{
+	height: 61px;
+	width: 200px;
+	line-height: 61px;
+	font-weight: 700;
+	font-size: 18px;
+	padding-left: 30px;
+	color: rgba(0,0,0, .6);
+}
+#cartPart .cartThing{
+	height: 39px;
+	width: 1218px;
+	background-color: #f5f5f5;
+	position: relative;
+	border-bottom: 1px solid rgba(0,0,0, .08);
+}
+#cartPart .cartThing h2{
+	color: #838383;
+	font-size: 12px;
+	font-weight: 700;
+	padding-left: 30px;
+	line-height: 39px;
+	float: left;
+}
+#cartPart .cartThing h3{
+	color: #838383;
+	font-size: 12px;
+	font-weight: 700;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-top: 0;
+	float: right;
+	line-height: 39px;
+}
+/* 添加商品 */
+#cartPart #kuan{
+	width:1218px;
+	min-height: 110px;
+}
+#cartPart .cartItems{
+	width: 1218px;
+	min-height: 110px;
+	/* background-color: #0077AA; */
+	margin-top: 15px;
+	position: relative;
+	border-bottom: 1px solid rgba(0,0,0, .08);
+	border-top: 1px solid rgba(0,0,0, .08);
+}
+#cartPart .cartItems .c1{
+	position: absolute;
+	display: inline-block;
+	border-radius: 50%;
+	overflow: hidden;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	/* background-color: #27282A; */
+	top: 45px;
+	left: 30px;
+}
+#cartPart .cartItems .c1 .c1a{
+	display: block;
+	left: -1px;
+	position: absolute;
+	top: -20px;
+}
+#cartPart .cartItems .c2{
+	height: 80px;
+	width: 80px;
+	cursor: pointer;
+	/* background-color: red; */
+	border: 1px solid rgba(0,0,0, .08);
+	position: absolute;
+	top: 14px;
+	overflow: hidden;
+    left: 80px;
+}
+#cartPart .cartItems .c2 img{
+	height: 80px;
+	width: 80px;
+	
+}
+#cartPart .cartItems .c3{
+	height: 50px;
+	min-width: 100px;
+	/* background-color: yellowgreen; */
+	position: absolute;
+	left: 180px;
+	top: 26px;
+}
+#cartPart .cartItems .c3 .c3a{
+	color: #323232;
+	font-size: 16px;
+	font-weight: 700;
+}
+#cartPart .cartItems .c3 .c3b{
+	color: #999;
+	font-size: 12px;
+	margin-top: 6px;
+}
+#cartPart .cartItems .c4{
+	position: absolute;
+	right: 0;
+	height:110px;
+	width: 500px;
+	/* background-color: red; */
+}
+#cartPart .cartItems .c4 .c4a{
+	height: 110px;
+	width: 80px;
+	
+	line-height: 110px;
+	/* background-color: goldenrod; */
+	margin-left: 30px;
+	color: #666;
+	text-align: center;
+}
+#cartPart .cartItems .c4 .c4b{
+	position: absolute;
+	line-height: 110px;
+	height: 110px;
+	text-align: center;
+	width: 100px;
+	/* background-color: #4262AF; */
+	top: 0;
+	left: 150px;
+}
+#cartPart .cartItems .c4 .c4b .c4b1{
+	position: absolute;
+	color: #666;
+	display:block;
+	line-height: 20px;
+	border-radius: 50%;
+	cursor: pointer;
+	top: 44px;
+	height: 20px;
+	width: 20px;
+	border: 1px solid rgba(0,0,0, .08);
+	/* background-color: green; */
+}
+#cartPart .cartItems .c4 .c4b .c4b3{
+	cursor: pointer;
+	color: #666;
+	position: absolute;
+	display:block;
+	line-height: 20px;
+	border-radius: 50%;
+	top: 44px;
+	right: 0;
+	height: 20px;
+	width: 20px;
+	border: 1px solid rgba(0,0,0, .08);
+	/* background-color: green; */
+}
+#cartPart .cartItems .c4 .c4c{
+	height: 110px;
+	min-width: 100px;
+	position: absolute;
+	right: 120px;
+	top: 0;
+	/* background-color: #63A35C; */
+	line-height: 110px;
+}
+#cartPart .cartItems .c4 .c4c .c4c3{
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: 10px;
+}
+#cartPart .cartItems .c4 .c4c .c4c4{
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: 60px;
+}
+#cartPart .cartItems .c4 .c4d{
+	height: 24px;
+	width: 24px;
+	line-height: 24px;
+	text-align: center;
+	border: 1px solid rgba(0,0,0, .08);
+	border-radius: 50%;
+	position: absolute;
+	right: 50px;
+	top: 40px;
+    color: #c2c2c2;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 16px;
+}
+#cartPart .cartBuy{
+    height:81px;
+	width: 1220px;
+	/* background-color: #0077AA; */
+	margin-top: 10px;
+	position: relative;
+	border-top: 1px solid rgba(0,0,0, .08);
+}
+#cartPart .cartBuy .b1{
+	height: 81px;
+	width: 100px;
+	/* line-height: 81px; */
+	padding-left: 30px;
+	float: left;
+}
+#cartPart .cartBuy .b1 .b1a{
+	position: absolute;
+	border-radius: 50%;
+	top: 30px;
+	display: block;
+	height: 16px;
+	width: 16px;
+	/* background-color: red; */
+	overflow: hidden;
+	cursor: pointer;
+}
+#cartPart .cartBuy .b1 .b1a img{
+	display: block;
+	position: absolute;
+	top: -20px;
+	left: -1px;
+	overflow: hidden;
+}
+#cartPart .cartBuy .b1 .b1b{
+	position: absolute;
+	left: 53px;
+	top: 28px;
+	color: #666;
+	cursor: pointer;
+	font-size: 12px;
+}
+#cartPart .cartBuy .b1 .b1c{
+	position: absolute;
+	left: 85px;
+	top: 28px;
+	color: #999;
+	font-size: 12px;
+	cursor: not-allowed;
+}
+#cartPart .cartBuy .b2{
+	height: 48px;
+	margin-top: 15px;
+	width: 150px;
+	position: absolute;
+	right: 320px;
+	/* background-color: #669900; */
+	border-right: 1px solid rgba(0,0,0, .08);
+}
+#cartPart .cartBuy .b2 .b2a{
+	color: #323232;
+	font-size: 14px;
+	font-weight: 700;
+}
+#cartPart .cartBuy .b2 .b2b{
+	color: #666;
+	font-size: 14px;
+	font-weight: 700;
+}
+#cartPart .cartBuy .b3{
+	height: 48px;
+	margin-top: 15px;
+	width: 180px;
+	position: absolute;
+	right: 135px;
+	/* background-color: #669900; */
+	border-right: 1px solid rgba(0,0,0, .08);
+}
+#cartPart .cartBuy .b3 .b3a{
+	color: #323232;
+	font-size: 14px;
+	font-weight: 700;
+}
+#cartPart .cartBuy .b3 .b3b{
+	color: #666;
+	font-size: 14px;
+	font-weight: 700;
+}
+#cartPart .cartBuy .b4{
+	position: absolute;
+	cursor: pointer;
+	top:15px;
+	right: 5px;
+	height: 48px;
+	width: 128px;
+	background-color: #0086B3;
+	border-radius: 8px;
+	color: #FFFDEF;
+	font-size: 16px;
+	line-height: 48px;
+	text-align: center;
+	font-weight: 900;
+}
+#cartPart .cartBuy .b4:hover{
+	background-color: #4262AF;
+}

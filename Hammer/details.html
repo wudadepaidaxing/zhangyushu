@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/details.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/header.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/secondPale.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div id="header"></div>
+		<!-- 引入二级菜单 -->	
+		<div id="second"></div>
+		<!-- 设置框架 -->
+		<div id="body">
+			<!-- 图片区 -->
+			<div class="bodyPart1">
+				<ul class="panter1">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<!-- <li><img src="img/1.webp" ></li>
+					<li><img src="img/2.webp" ></li>
+					<li><img src="img/3.webp" ></li>
+					<li><img src="img/4.webp" ></li>
+					<li></li> -->
+				</ul>
+				<ul class="panter2">
+					<li class="p1">
+						<!-- 隐藏的放大镜 -->
+						<span><!-- <img src="img/e991f946530a7cfab3d9670dd8b1371b.webp" > --></span>
+						
+					    <div class="mask">	
+										
+					    </div>
+					</li>
+					<div class="max">
+						<!-- <img src="img/e991f946530a7cfab3d9670dd8b1371b.webp" > -->
+					</div>
+				</ul>
+				
+				
+			</div>
+			<!-- 文字区 -->
+			<div class="bodyPart2">
+				<div class="artical">
+					<h1>Smartisan 真无线TWS蓝牙耳机</h1>
+					<h2>智能匹配 开盖即连</h2>
+					<span>249.00</span>
+				</div>
+				<!-- 按钮 -->
+				<div class="button">
+					<span class="b3">颜色选择</span>
+					<!-- 白色 -->
+					<span class="b1"></span>
+					<!-- 绿色 -->
+					<span class="b2"><img src="img/5.png" ></span>
+				</div>
+				<!-- 底线 -->
+				<span class="line"></span>
+				<!-- 服务说明 -->
+				<div class="number">
+					<span>数量选择</span>
+					<div class="minBtn">
+						-
+					</div>
+					<span class="a1">1</span>
+					<div class="addBtn">
+						+
+					</div>
+				</div>
+				<!-- 服务说明 -->
+				<div class="serve">
+					<span>服务说明</span>
+					<div class="s1">
+						* 满99元包邮
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 弹出框 -->
+		<div id="jump">
+			已添加至购物车
+		</div>
+		<div id="local">
+			<div class="kf">
+				<p><img src="img/11.png"></p>
+				<h3>联系客服</h3>
+			</div>
+			<div class="top">
+				<p><img src="img/12.png" ></p>
+				<h3>回到顶部</h3>
+			</div>
+		</div>
+		<div id="picture">
+			<img src="img/ia_10303.png" >
+		</div>
+		
+		<!-- 底部固定 -->
+		<div id="bottom">
+			<div class="control">
+				<h1 class="ha">您已选择了</h1>
+				<div class="change">
+				   <h1 class="he">Smartisan 真无线TWS蓝牙耳机 ×</h1>
+				   <span class="thing">1</span>
+				   <h2>白色</h2>  
+				</div>
+			    <div class="btnOdd">加入购物车</div>
+				<div class="buyBtn">现在购买</div>
+				<div class="dollor">
+					<i style="font-style:normal;font-weight: 700;color: #D44D44;">￥</i>
+					<span>249.00</span>
+				</div>
+		    </div>
+		</div>	
+		
+		
+		<!-- 引入脚步 -->	
+		<div id="footer" style="z-index: 25;"></div>
+			
+		
+	</body>
+</html>
+<script src="js/new_file.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/details.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	// 引入toubu
+	$(function(){
+		$("#header").load("header.html");
+		$("#second").load("secondPale.html");
+		$("#footer").load("footer.html");
+		
+		//放大镜
+		 $(".p1").mouseenter(function(){
+		        $(".mask,.max").show();
+		    }).mouseleave(function(){
+		        $(".mask,.max").hide();
+		    }).mousemove(function(e){
+		        let l = e.pageX - $(this).offset().left - $(".mask").width()*0.5;
+		        let t = e.pageY - $(this).offset().top - $(".mask").height()*0.5;
+		        if(l <= 0){
+		            l=0;
+		        }
+		        if(l >= $(this).width()-$(".mask").width()){
+		            l=$(this).width()-$(".mask").width();
+		        }
+		        if(t <= 0){
+		            t=0;
+		        }
+		        if(t >= $(this).height()-$(".mask").height()){
+		            t=$(this).height()-$(".mask").height();
+		        }
+		
+		        $(".mask").css({
+		            left:l,
+		            top:t
+		        })
+		        
+		        let n = $(".max img").width()/$(this).width()
+		        $(".max img").css({
+		            left:-n*l,
+		            top:-n*t
+		        });
+		    })
+			// 点击图片
+			
+				// $("li").click(function(){
+				// 	$(".p1 span").html($(this).html());
+				// 	$(".max").html($(this).html());
+				// });
+			//回到顶部
+			$(".top").click(function(){
+				$("html , body").animate({scrollTop:"0"},500);
+					// $(window).scrollTop(0);	
+			})
+				
+			// 渲染
+			
+				$(".artical").html("");
+				$("<h1>"+ sessionStorage.getItem("name") +"</h1>"+
+				  "<h2>"+sessionStorage.getItem("text")+"</h2>"+
+				"<span>"+sessionStorage.getItem("value")+"</span>").appendTo($(".artical"));
+				$(".dollor span").html(sessionStorage.getItem("value"));
+				$(".he").html(sessionStorage.getItem("name"));
+			
+		    //放大镜渲染
+			   $(".bodyPart1 .panter1 li").html(sessionStorage.getItem("img"))
+			   $("<span>"+sessionStorage.getItem("img")+"</span>").appendTo($(".p1"));
+				$(".max").html(sessionStorage.getItem("img"));
+				// $(".bodyPart1.panter1 li").html("");
+				
+				// $("li").click(function(){
+				// 	$(".p1 span").html($(this).html());
+					
+				// });
+		
+			// 添加至购物车
+			
+			$(".btnOdd").click(function(){
+				$("#jump").css({display:"block"});
+				var time = setInterval(function(){
+					$("#jump").css({display:"none"});
+				},2000)
+				
+			});
+			
+			
+			
+			
+			
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	// //点击按钮切换图片颜色
+	// $(function(){
+	// 	$(".b2").click(function(){
+	// 	   			$.getJSON("details.json",function(result){
+	// 	   				$.each(result,function(i,field){
+	// 						    console.log(result);
+	// 	   						$("li").append(field["img"][0]);
+								
+	// 	   				})
+	// 	   	       })
+ //               })
+	//  	})
+	
+</script>

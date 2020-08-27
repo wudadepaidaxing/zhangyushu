@@ -1,0 +1,157 @@
+@charset "utf-8";
+// 侧边栏
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+body {
+	background-color: #ededed;
+}
+#list{
+	position: absolute;
+	background-color: #FFFFFF;
+	top:210px;
+	border: 1px solid rgba(0,0,0, .08);
+	left: 150px;
+	border-radius: 8px;
+	overflow: hidden;
+	height: 450px;
+	width: 210px;
+	// background-color: red;
+}
+#list .picture{
+	padding: 40px 0 0 40px;
+	height:170px;
+	width: 212px;
+	// background-color: skyblue;
+}
+#list .user{
+	position: absolute;
+	top: 160px;
+	display: block;
+	height: 48px;
+	width: 210px;
+	line-height: 48px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+}
+$size :46.5px;
+#list ul li{
+	cursor: pointer;
+	// background-color: goldenrod;
+	height: $size;
+	border: 1px solid rgba(0,0,0, .08);
+	line-height: $size;
+	text-align: center;
+}
+#list ul li:hover{
+	background-color: #6383E6;
+}
+#box{
+	position: absolute;
+	top: 180px;
+	left: 400px;
+	height: 540px;
+	width: 986px;
+	background-color: #FFFFFF;
+	overflow: hidden;
+	border-radius: 8px;
+}
+#box .lan{
+	height: 51px;
+	width: 986px;
+	position: relative;
+	border-radius: 6px;
+	background-color: #F5F5F5;
+}
+#box .lan .artical{
+	height: 51px;
+	line-height: 51px;
+	padding-left: 20px;
+	font-size: 18px;
+	color: #323232;
+}
+#box .lan .sec{
+	position: absolute;
+	cursor: pointer;
+	display: block;
+	height: 32px;
+	width: 120px;
+	border: 1px solid rgba(0,0,0, .08);
+	border-radius: 6px;
+	background-color: #f2f2f2;
+	padding-left: 10px;
+	color: #666;
+	text-align: center;
+	line-height: 32px;
+	right: 150px;
+	top: 10px;
+}
+#box .lan .sec option{
+	border: 1px solid rgba(0,0,0, .08);
+	border-radius: 5px;
+}
+#box .lan .sea{
+	position: absolute;
+	cursor: pointer;
+	display: block;
+	height: 32px;
+	width: 120px;
+	border: 1px solid rgba(0,0,0, .08);
+	border-radius: 6px;
+	background-color: #f2f2f2;
+	padding-left: 10px;
+	color: #666;
+	text-align: center;
+	line-height: 32px;
+	right: 10px;
+	top: 10px;
+}
+#box .pinter{
+	position: absolute;
+	height: 300px;
+	width: 300px;
+	top: 100px;
+	left: 330px;
+}
+#box .pinter img{
+	height: 300px;
+	width: 300pxs;
+}
+#box  .arr{
+	position: absolute;
+	width: 986px;
+	text-align: center;
+	top: 390px;
+	
+}
+#box  .arr h3{
+	font-size: 14px;
+	color: #666;	
+}
+#box input{
+	position: absolute;
+	top: 430px;
+	left: 450px;
+	height: 30px;
+	width: 100px;
+	border-radius: 4px;
+	font-size: 14px;
+	border: 1px solid rgba($color: #000000, $alpha: 0.08);
+	color: #666;
+	cursor: pointer;
+}

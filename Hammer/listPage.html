@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/listPage.css"/>
+	    <link rel="stylesheet" type="text/css" href="./css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/secondPale.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+	</head>
+	<body>
+		<!-- 头部引用 -->
+		<div id="header">
+	
+		</div>
+		<!-- 导航引用 -->
+		<div id="second">
+			
+		</div>
+		<!-- fourword -->
+        <div id="fourWord">
+        	<ul>
+        		<li>
+					<a href="">综合排序</a>
+				
+				</li>
+				<li>
+					<a href="">销量排序</a>
+					<span></span>
+				</li>
+				<li>
+					<a href="">价格低到高</a>
+					<span></span>
+				</li>
+				<li>
+					<a href="">价格高到低</a>
+					<span></span>
+				</li>
+        	</ul>
+        </div>
+	    <!-- 页面渲染 -->
+		<div id="Drawing">
+			<!-- <section>
+				<span class="img"><img src="img/13%20(18).webp" ></span>
+				<artical>
+					<h3>坚果快充移动电源 20000mAh（45W MAX)</h3>
+					<h5>"充电狂人的大满足"</h5>
+				</artical>
+				<dollor>
+				<span class="d1">155.00</span>
+				<span class="d2">249.00</span>
+				</dollor>
+			</section> -->
+		</div>
+		<!-- 底部 -->
+		<div id="footer">
+			
+		</div>
+		
+	</body>
+</html>
+<script src="js/new_file.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	// 引入头部
+	$(function(){
+		$("#header").load("header.html");
+		$("#second").load("secondPale.html");
+		$("#footer").load("footer.html");
+	});
+   // 动态渲染
+   
+   $(function(){
+       $.getJSON("js/list.json",function(data){
+   		$.each(data,function(index,result){
+   			$("<section>"+
+   			"<span>" + "<img src=img/"+result.img +".webp>" + "</span>"+
+   			"<artical>"+
+   				"<h3>" + result.text1 + "</h3>"+
+   				"<h5>" + result.text2 + "</h5>"+
+   			"</artical>"+
+   			"<dollor>"+
+   				"<span class='d1'>" + result.money1 + "</span>"+
+   				"<span class='d2'>" + result.money1 + "</span>"+
+   			"</dollor>"+
+   		"</section>").appendTo($("#Drawing"));	
+		// 存入localStorage
+		
+   		});
+		 $("section").click(function(){
+		 	sessionStorage.setItem("name", $(this).find("h3").html());
+		 	sessionStorage.setItem("text", $(this).find("h5").html());
+		 	sessionStorage.setItem("value",$(this).find(".d1").html());
+		 	sessionStorage.setItem("img", $(this).find("span").html());
+		 	location.href = "details.html";
+		 })
+   	  });
+   });
+</script>

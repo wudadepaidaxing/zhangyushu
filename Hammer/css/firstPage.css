@@ -1,0 +1,645 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+body {
+	background-color: #ededed;
+}
+
+/* 头部 */
+#firstPage_header {
+	height: 45px;
+	width: 100%;
+	z-index: 99;
+}
+/* 尾部 */
+#firstPage_footer {
+	height: 339px;
+	width: 100%;
+	margin-top: 25px;
+}
+/* 二级菜单 */
+#allSecondMenu{
+	width: 100%;
+	height: 74px;
+}
+
+/* 轮播图 */
+#shufflingFigure {
+	width: 1220px;
+	height: 499px;
+	/* background-color: #5079D9; */
+	margin: 0 auto;
+	border-radius: 8px;
+	margin-top: 25px;
+	position: relative;
+	cursor: pointer;
+}
+
+#shufflingFigure .img li {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#shufflingFigure .img li a img {
+	display: block;
+	width: 1220px;
+	height: 499px;
+}
+
+#shufflingFigure .num {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	bottom: 20px;
+}
+
+#shufflingFigure .num li {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background-color: darkgray;
+	color: white;
+	text-align: center;
+	line-height: 20px;
+	border-radius: 50%;
+	margin: 0 4px;
+	cursor: pointer;
+}
+
+#shufflingFigure .num .current {
+	background-color: white !important;
+}
+
+/* fourSection */
+#fourSection {
+	height: 198px;
+	width: 1220px;
+/* 	background-color: #5079D9; */
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border-radius: 8px;
+	border: 1px solid rgba(0,0,0,0.14);
+	overflow: hidden;
+}
+
+/* 设置四个中的第一个内容 */
+#fourSection .firstImg {
+	border-right: 1px solid #efefef;
+	position: relative;
+	cursor: pointer;
+	float: left;
+	height: 198px;
+	width: 304.32px;
+	background-color: #8ADD37;
+}
+
+#fourSection .firstImg img {
+	height: 100%;
+	width: 100%;
+}
+
+#fourSection .firstImg a {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#fourSection .firstImg :hover {
+	box-shadow: inset 0 0 38px rgba(0, 0, 0, 0.1);
+	transition:all 0.4s ease-out;
+}
+
+/* 设置四个中的第二个内容 */
+#fourSection .secondImg {
+	
+	position: relative;
+	cursor: pointer;
+	float: left;
+	height: 198px;
+	width: 304.32px;
+	background-color: #A9A9A9;
+}
+
+#fourSection .secondImg img {
+	height: 100%;
+	width: 100%;
+}
+
+#fourSection .secondImg a {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#fourSection .secondImg :hover {
+	box-shadow: inset 0 0 38px rgba(0, 0, 0, 0.1);
+	transition:all 0.4s ease-out;
+}
+
+/* 设置四个中的第三个内容 */
+#fourSection .thirdImg {
+	position: relative;
+	cursor: pointer;
+	float: left;
+	height: 198px;
+	width: 304.32px;
+	background-color: red;
+}
+
+#fourSection .thirdImg img {
+	height: 100%;
+	width: 100%;
+}
+
+#fourSection .thirdImg a {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#fourSection .thirdImg :hover {
+	box-shadow: inset 0 0 38px rgba(0, 0, 0, 0.1);
+	transition:all 0.4s ease-out;
+}
+
+/* 设置四个中的第四个内容 */
+#fourSection .fourthImg {
+	position: relative;
+	cursor: pointer;
+	float: left;
+	height: 198px;
+	width: 304.32px;
+	background-color: salmon;
+}
+
+#fourSection .fourthImg img {
+	height: 100%;
+	width: 100%;
+}
+
+#fourSection .fourthImg a {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#fourSection .fourthImg :hover {
+	box-shadow: inset 0 0 38px rgba(0, 0, 0, 0.1);
+	transition:all 0.4s ease-out;
+}
+
+/* 设置section的第一个项目 热门商品 */
+#hotCommodity{
+	/* height: 492px;
+	width: 1218px;
+	border: 1px solid rgba(0,0,0, .14);
+	box-sizing: border-box;
+	border-radius: 8px;
+	overflow: hidden;
+	background-color: #5079D9;
+	margin: 0 auto;
+	margin-top: 25px;
+	background: #fff; */
+}
+/* #hotCommodity .header{
+	height: 61px;
+	width: 1218px;
+	/* background-color: #8ADD37; */
+	/* position: relative;
+	border-bottom: 1px solid rgba(0,0,0, .1);
+}
+#hotCommodity .header h5{
+	font-size: 18px;
+	font-weight: bolder;
+	line-height: 60px;
+	color: #666;
+	margin-left: 25px;
+} */
+/* 编写图片 缺少轮播样式 缺jQuery 鼠标画上事件*/
+/* #hotCommodity .partBody{
+	height: 429px;
+	width: 1218px;
+}
+#hotCommodity .partBody .figure1{
+	float: left;
+	position: relative;
+	height:429px;
+	width:303px;
+	border: none;
+	border-right: 1px solid #efefef;
+	border-bottom: 1px solid #efefef;
+	border-radius: initial;
+	text-align: center;
+	cursor: pointer;
+}
+#hotCommodity .partBody .figure1 .parentImg{
+	height: 216px;
+	width: 216px;
+	margin: 0 auto;
+	margin-top: 43.75px;
+}
+#hotCommodity .partBody .figure1 h3{
+	font-size: 14px;
+	font-weight: 700;
+	color: #333;
+	margin-top: 20px;
+}
+#hotCommodity .partBody .figure1 h5{
+	font-size: 12px;
+	font-weight: 400;
+	color: #999999;
+	margin-top: 15px;
+}
+#hotCommodity .partBody .figure1 .point{
+	height: 17px;
+	margin-top: 15px;
+}
+#hotCommodity .partBody .figure1 .point .point1{
+	display: inline-block;
+	height: 14px;
+	width: 14px;
+	border: 1px solid #e5e5e5;
+	border-radius: 50%;
+}
+#hotCommodity .partBody .figure1:hover{
+	box-shadow: inset 0 0 38px rgba(0, 0, 0, 0.1);
+	transition:all 0.4s ease-out;
+}
+#hotCommodity .partBody .figure1 .point .point2{
+	display: inline-block;
+	height: 14px;
+	width: 14px;
+	border: 1px solid #e5e5e5;
+	border-radius: 50%;
+}
+#hotCommodity .partBody .figure1 .point .point2 img{
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin: 0 auto;
+	border: 0;
+	margin-top: 2px;
+}
+#hotCommodity .partBody .figure1 .artical{
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bolder;
+	color: #d44d44;
+	margin-top: 20px;
+} */ 
+/* 编写配件 */
+#Accessories{
+	height: 921px;
+	width: 1220px;
+	margin: 0 auto;
+	background: #fff;
+	margin-top: 25px;
+	position: relative;
+	border-radius: 8px;
+	box-sizing: border-box; 
+	overflow: hidden;
+}
+#Accessories .header{
+	height: 61px;
+	width: 1218px;
+	background: #fafafa;
+	position: relative;
+	border-bottom: 1px solid rgba(0,0,0, .1);
+}
+#Accessories .header h5{
+	font-size: 18px;
+	font-weight: bolder;
+	line-height: 60px;
+	color: #666;
+	margin-left: 25px;
+}
+#Accessories .partBody1{
+	position: relative;
+	float: left;
+	height:429px ;
+	width: 609.9px;
+	background-color: #D44D44;
+	cursor: pointer;
+}
+#Accessories .partBody1 img{
+	width: 100%;
+	height: 100%;
+	cursor:  pointer;
+}
+#Accessories .partBody1 .part1{
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+#Accessories .partBody1 .part1:hover{
+	box-shadow: inset 0 0 38px rgba(0, 0, 0, 0.8);
+	transition:all 0.4s ease-out;
+	text-decoration: none;
+}
+#Accessories .figure1{
+	float: left;
+	position: relative;
+	height:429px;
+	width:304px;
+	border: none;
+	border-right: 1px solid #efefef;
+	border-bottom: 1px solid #efefef;
+	border-radius: initial;
+	text-align: center;
+	cursor: pointer;
+}
+#Accessories .figure1 .parentImg{
+	height: 216px;
+	width: 216px;
+	margin: 0 auto;
+	margin-top: 43.75px;
+}
+#Accessories .figure1 h3{
+	font-size: 14px;
+	font-weight: 700;
+	color: #333;
+	margin-top: 20px;
+}
+#Accessories .figure1 h5{
+	font-size: 12px;
+	font-weight: 400;
+	color: #999999;
+	margin-top: 15px;
+}
+#Accessories .figure1 .point{
+	height: 17px;
+	margin-top: 15px;
+}
+#Accessories .figure1 .point .point1{
+	display: inline-block;
+	height: 14px;
+	width: 14px;
+	border: 1px solid #e5e5e5;
+	border-radius: 50%;
+}
+#Accessories .figure1:hover{
+	box-shadow: inset 0 0 38px rgba(0, 0, 0, 0.1);
+	transition:all 0.4s ease-out;
+}
+#Accessories .figure1 .point .point2{
+	display: inline-block;
+	height: 14px;
+	width: 14px;
+	border: 1px solid #e5e5e5;
+	border-radius: 50%;
+}
+#Accessories .figure1 .point .point2 img{
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin: 0 auto;
+	border: 0;
+	margin-top: 2px;
+}
+#Accessories .figure1 .artical{
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bolder;
+	color: #d44d44;
+	margin-top: 20px;
+}
+/* 写智能家居的大类其他相似类型引用 */
+#smartHomg{
+	height: 492px;
+	width: 1220px;
+	margin: 0 auto;
+	background: #fff;
+	margin-top: 25px;
+	position: relative;
+	border-radius: 8px;
+	box-sizing: border-box; 
+	overflow: hidden;
+}
+#smartHomg .header{
+	height: 61px;
+	width: 1218px;
+	background: #fafafa;
+	position: relative;
+	border-bottom: 1px solid rgba(0,0,0, .1);
+}
+#smartHomg .header h5{
+	font-size: 18px;
+	font-weight: bolder;
+	line-height: 60px;
+	color: #666;
+	margin-left: 25px;
+}
+#smartHomg .partBody1{
+	position: relative;
+	float: left;
+	height:429px ;
+	width: 609.9px;
+	background-color: #D44D44;
+	cursor: pointer;
+}
+#smartHomg .partBody1 img{
+	width: 100%;
+	height: 100%;
+	cursor:  pointer;
+}
+#smartHomg .partBody1 .part1:hover{
+	box-shadow: inset 0 0 38px rgba(0, 0, 0, 0.8);
+	transition:all 0.4s ease-out;
+	text-decoration: none;
+}
+#smartHomg .figure1{
+	float: left;
+	position: relative;
+	height:429px;
+	width:304px;
+	border: none;
+	border-right: 1px solid #efefef;
+	border-bottom: 1px solid #efefef;
+	border-radius: initial;
+	text-align: center;
+	cursor: pointer;
+}
+#smartHomg .figure1 .parentImg{
+	height: 216px;
+	width: 216px;
+	margin: 0 auto;
+	margin-top: 43.75px;
+}
+#smartHomg .figure1 h3{
+	font-size: 14px;
+	font-weight: 700;
+	color: #333;
+	margin-top: 20px;
+}
+#smartHomg .figure1 h5{
+	font-size: 12px;
+	font-weight: 400;
+	color: #999999;
+	margin-top: 15px;
+}
+#smartHomg .figure1 .point{
+	height: 17px;
+	margin-top: 15px;
+}
+#smartHomg .figure1 .point .point1{
+	display: inline-block;
+	height: 14px;
+	width: 14px;
+	border: 1px solid #e5e5e5;
+	border-radius: 50%;
+}
+#smartHomg .figure1:hover{
+	box-shadow: inset 0 0 38px rgba(0, 0, 0, 0.1);
+	transition:all 0.4s ease-out;
+}
+#smartHomg .figure1 .point .point2{
+	display: inline-block;
+	height: 14px;
+	width: 14px;
+	border: 1px solid #e5e5e5;
+	border-radius: 50%;
+}
+#smartHomg .figure1 .point .point2 img{
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin: 0 auto;
+	border: 0;
+	margin-top: 2px;
+}
+#smartHomg .figure1 .artical{
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bolder;
+	color: #d44d44;
+	margin-top: 20px;
+}
+#bbsSelection{
+	width: 1220px;
+	height: 398.6px;
+	/* background-color: #5079D9; */
+	/* margin-top: 25px; */
+	margin: 25px auto;
+	position: relative;
+	box-sizing: border-box;
+	border:  1px solid rgba(0,0,0, .14);
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 3px 8px -6px rgba(0,0,0, .1);
+}
+#bbsSelection .header{
+	height: 61px;
+	width: 1218px;
+	background: #fafafa;
+	position: relative;
+	border-bottom: 1px solid rgba(0,0,0, .1);
+}
+#bbsSelection .header h5{
+	font-size: 18px;
+	font-weight: bolder;
+	line-height: 60px;
+	color: #666;
+	margin-left: 25px;
+}
+#bbsSelection .header .bbs a{
+	display: block;
+	text-align: center;
+	line-height: 37px;
+	height: 37px;
+	font-weight: 700;
+    padding:  0 15px;
+	color: #666;
+	font-size: 14px;
+	border-radius: 4px;
+	background: #fafafa;
+	position: absolute;
+	border: 1px solid #dcdcdc;
+	right: 10px;
+	top: 14px;
+}
+#bbsSelection .Artical{
+	height: 335.6px;
+	width: 302.51px;
+	float: left;
+	position: relative;
+	border:  1px solid rgba(0,0,0, .1);
+	cursor: pointer;
+	background-color: #fff
+}
+#bbsSelection .Artical:hover{
+	box-shadow: inset 0 0 38px rgba(0,0,0, .08);
+}
+#bbsSelection .Artical .ArticalImg {
+	height: 154.4px;
+	width: 244px;
+	position: relative;
+	border: 1px solid rgba(0,0,0, .01);
+	border-radius: 4px;
+	overflow: hidden;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+#bbsSelection .Artical .ArticalImg img{
+	width: 100%;
+	height: 100%;
+}
+#bbsSelection .Artical h3{
+	font-size: 15px;
+	font-weight: 700;
+	color: #333;
+	padding-top: 30px;
+	padding-bottom: 12px;
+	padding-left: 30px;
+/* 	text-overflow: ellipsis;
+	white-space: nowrap; */
+}
+#bbsSelection .Artical p{
+	font-size: 12px;
+	color: #999;
+	font-weight: 400;
+	padding-left: 30px;
+}
+#bbsSelection .Artical .a1{
+	position: absolute;
+	bottom: 30px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #5079D9;
+}

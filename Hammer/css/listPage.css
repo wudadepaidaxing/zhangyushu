@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+body {
+	background-color: #ededed;
+}
+#fourWord ul{
+	width: 1220px;
+	height: 60px;
+	margin: 0 auto;
+	float: left;
+	margin-left: 138px;
+}
+#fourWord ul li {
+	line-height:60px ;
+	
+	text-align: center;
+	height: 60px;
+	width: 96px;
+	/* background-color: #0077AA; */
+	float: left;
+}
+#fourWord ul li a{
+	font-size: 12px;
+	cursor: pointer;
+	color: #999;
+	transition: color .3s ease;
+}
+#fourWord ul li a:hover{
+	color: #5079D9;
+}
+#fourWord ul li span{
+	float: left;
+	width: 2px;
+	height: 2px;
+	background-color: #c7c7c7;
+	margin-top: 29px;
+}
+#Drawing{
+	width: 1220px;
+	min-height: calc(100vh - 320px);
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	border-radius: 8px;
+	overflow: hidden;
+	box-sizing: border-box;
+	margin-bottom: 40px;
+}
+#Drawing section{
+	height: 375.2px;
+	float: left;
+	width: 243px;
+	cursor: pointer;
+	border-right: 1px solid rgba(0,0,0, .08);
+	border-bottom: 1px solid rgba(0,0,0, .08);
+	/* background-color: #0086B3; */
+}
+#Drawing section:hover{
+	box-shadow: inset 0 0 38px rgba(0, 0, 0, 0.1);
+	transition:all 0.4s ease-out;
+}
+#Drawing section span img{
+	display: block;
+	padding-top: 20px;
+	padding-left: 20px;
+	height: 204px;
+	width: 204px;
+	cursor: pointer;
+}
+#Drawing section artical h3{
+	margin-right: 12px;
+	padding-top: 8px;
+	font-size: 14px;
+	font-weight: 700;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding-left: 10px;
+}
+#Drawing section artical h5{
+	padding-left: 10px;
+	padding-top: 15px;
+	font-size: 12px;
+	color: #999999;
+	text-align: center;
+	padding-bottom: 40px;
+}
+#Drawing section dollor .d1{
+	font-family: arial;
+	font-size: 18px;
+	font-weight: bolder;
+	color: #d44d44;
+	padding-left: 60px;
+}
+#Drawing section dollor .d2{
+	text-decoration: line-through;
+	padding-left: 10px;
+	font-weight: 400;
+	color: #ccc;
+	font-size: 12px;
+}

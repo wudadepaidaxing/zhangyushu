@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/loginPale.css"/>
+	</head>
+	<body>
+		<div id="login">
+			<div class="loginLogo">
+				<h4>
+					创建用户
+				</h4>
+			</div>
+			<div class="loginCheck">
+				 <div class="loginForm">
+				 	<ul style="position: relative;">
+						<!-- 第一个二级联动 -->
+				 		<li class="form1">
+							<span class="pinter">
+								<p class="iconfont icon-xt5-copy"></p>
+							</span>
+							<span class="articl">
+								国家和地区
+							</span>
+							<span class="articalChange">
+							  中国
+							</span>
+							<span class="change">
+								<img src="img/ic_change_7ce7ba3a23@2x.png" >
+							</span>
+						</li>
+						<!-- 这里需要一个与国家相应的开头二级联动 -->
+						<li class="form2">
+							<span class="pinter">
+								<div class="v1" style="font-size: 14px; color: #FF0000;">
+									
+								</div>
+							</span>
+							<span class="number">
+								+86
+							</span>
+							<!-- 账号 -->
+							<input type="text" placeholder="手机号" />
+		
+						</li>
+						<!-- 密码 -->
+						<li class="form3">
+							<span class="pinter">
+								<div class="v2" style="font-size: 14px; color: #FF0000;">
+									
+								</div>
+							</span>
+							<!-- 密码 -->
+							<input type="password" placeholder="密码" />
+							
+						</li>
+						
+				 	</ul>
+			</div>
+		   </div>
+		      <!-- 登录按钮 -->
+			<div class="button">
+		    	注册
+		    </div>
+			<div class="other">
+				<span class="o1">其他账号登陆：</span>
+				<span class="o2" ><img src="./img/icons_c3a3154da5.png" ></span>
+				<span class="o3">普通登录&nbsp; ></span>
+			</div>
+			<div class="bot">
+				<span style="font-size: 12px; color: #969896;">登录代表你已同意</span>
+				<a href="" style="font-size: 12px;">用户协议</a>和
+				<a href="" style="font-size: 12px;">隐私政策</a>
+			</div>
+		</div>
+		<!--信息  -->
+		<div id="formation">
+			<p class="f1">Copyright © 2020 smartisan.com 版权所有</p>
+		    <p class="f2">京 ICP 备 18020659 号 - 2</p>
+		</div>
+	</body>
+</html>
+<script src="js/new_file.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	//密码的合法性
+	var oScrit = document.querySelectorAll("input")[1];
+	var oSc = document.querySelector(".v2");
+	var flagScr = false;
+	var num = /^\d{6,18}$/;
+	var letter = /^[a-zA-Z]{6,18}$/;
+	var rchar = /^[!@#$]{6,18}$/;
+	var _num = /\d{6,18}/;
+	var _letter = /[a-zA-Z]{6,18}/;
+	var _rchar = /[!@#$]{6,18}/;
+	var sum = /^[^_\s]{6,18}$/
+	oScrit.onblur = function() {
+		if (sum.test(oScrit.value)) {
+			if (num.test(oScrit.value) || letter.test(oScrit.value) || rchar.test(oScrit.value)) {
+				oSc.innerHTML = "弱";
+			} else if (_num.test(oScrit.value) && _letter.test(oScrit.value) && _rchar.test(oScrit.value)) {
+				oSc.innerHTML = "强";
+			} else {
+				oSc.innerHTML = "中";
+			}
+			flagScr = true;
+		} else {
+			oSc.innerHTML = "不合法";
+			flagScr = false;
+		}
+	
+	}
+	 //手机号验证
+	var oPhone = document.querySelectorAll("input")[0];
+	var oPhe = document.querySelector(".v1");
+	var flagPhe = false;
+	
+	var numb = /^\d{11}$/;
+	oPhone.onblur = function() {
+		if (numb.test(oPhone.value)) {
+			oPhe.innerHTML = "√";
+			flagPhe = true;
+		} else {
+			oPhe.innerHTML = "不合法";
+			flagPhe = false;
+		}
+	}
+	
+
+	//注册
+	$(".button").click(function(){
+		
+		if(flagScr && flagPhe){
+			$.ajax('',{
+		    url:"js/registeredPage.php",
+		    data:{
+		        id:$("input").eq(0).val()+"",
+		        pwd:$("input").eq(1).val()+"" 
+		    },
+		    type:'get',
+		    success:function(data){
+				console.log(data);
+			   if(data == 0){
+				  location.href = "loginPage.html";
+			   }else if(data ==1){
+				$("input").eq(0).val("").attr("placeholder","用户名已存在")				  
+			  } 
+		    },
+		    error:function(xhr,type,errorThrown){
+		        console.log("失败data");
+		    },
+			
+		 });
+		
+		};
+	});
+	
+	
+</script>

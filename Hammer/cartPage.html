@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/cartPage.css"/>
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/secondPale.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+	</head>
+	<body>
+		<!-- 引入头部 -->
+		<div id="header">
+			
+		</div>
+		<!-- 引入下拉菜单 -->
+		<div id="second">
+			
+		</div>
+		<div id="cartPart">
+			<div class="listing">
+				<h3>购物清单</h3>
+			</div>
+			<div class="cartThing">
+				<h2>商品信息</h2>
+				<h3>操作</h3>
+				<h3>小计</h3>
+				<h3>数量</h3>
+				<h3>单价</h3>
+			</div>
+			<!-- 添加商品 -->
+			<div id="kuan">
+				<div class="cartItems">
+					<!-- <div class="c1">
+						<img src="img/checkbox_f49f6e4acf.png"  class="c1a">
+					</div>
+					<div class="c2">
+						<img src="img/13%20(15).webp" class="c2a">
+					</div>
+					<div class="c3">
+						<span class="c3a">Smartisan 挂脖蓝牙耳机</span></br>
+					    <span class="c3b"> 黑色</span>
+					</div>
+					<div class="c4">
+						<div class="c4a">
+							￥<span>199.00</span>
+						</div>
+						<div class="c4b">
+							<span class="c4b1">-</span>
+							<span class="c4b2">1</span>
+							<span class="c4b3">+</span>
+						</div>
+						<div class="c4c">
+							<span class="c4c1">￥</span>
+							<span class="c4c2">169.00</span>
+						    <span class="c4c3" style="font-size: 12px;color: #FF0000;">已优惠￥</span>
+							<span class="c4c4" style="font-size: 12px;color: #FF0000;">46.00</span>
+						</div>
+						<div class="c4d">
+							<span>×</span>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		
+			
+			<!-- 购买栏 -->
+			<div class="cartBuy">
+				<div class="b1">
+					<span class="b1a"><img src="img/checkbox_f49f6e4acf.png"></span>
+				    <span class="b1b">全选 </span>&nbsp;&nbsp;
+				    <span class="b1c">|&nbsp;&nbsp;删除选中的商品</span>	
+				</div>
+				<div class="b2">
+					<!-- <div class="b2a">
+						<span class="b2a1">已选择</span>	
+						<span class="b2a2" style="padding: 0 5px;">1</span>
+						<span class="b2a3">件商品</span>
+					</div>
+					<div class="b2b">
+						<span class="b2b1" style="margin-left: 8px;">共计</span>	
+						<span class="b2b2" style="padding: 0 5px;">1</span>
+						<span class="b2b3">件商品</span>
+					</div> -->
+				</div>
+				<div class="b3">
+					<!-- <div class="b3a">
+						<span class="b3b1">应付总额：&nbsp;￥</span>	
+						<span class="b3b2" style="padding: 0 5px;font-size: 18px;">0.00</span>
+					</div>
+					<div class="b3b">
+						<span class="b3b1">应付总额不含运费</span>
+					</div> -->
+				</div>
+				<div class="b4">
+					现在结算
+				</div>
+			</div>
+		</div>
+		
+		<!-- 引入脚步 -->
+		<div id="footer">
+			
+		</div>
+	</body>
+</html>
+<script src="js/new_file.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+	// $(function(){
+	// 	$("#header").load("header.html");
+	// 	$("#second").load("secondPale.html");
+	// 	$("#footer").load("footer.html");
+	// })
+	
+	//页面渲染
+	$(function(){
+		
+		$("#header").load("header.html");
+		$("#second").load("secondPale.html");
+		$("#footer").load("footer.html");
+		$(
+		
+		"<div class='c1'>"+
+			"<img src='img/checkbox_f49f6e4acf.png'  class='c1a'>"+
+		"</div>"+
+		 "<div class='c2'>"+
+				sessionStorage.getItem("wimg") +			
+		   "</div>"+
+		  " <div class='c3'>"+
+		   "	<span class='c3a'>"+sessionStorage.getItem("wtext")+"</span></br>"+
+		      " <span class='c3b'>"+ "黑色"+"</span>"+
+		   "</div>"+
+		  " <div class='c4'>"+
+		       "<div class='c4a'>"+
+		   		"￥<span>"+sessionStorage.getItem("wsinglePrice")+"</span>"+
+		   	"</div>"+
+		   	"<div class='c4b'>"+
+		   		"<span class='c4b1'>-</span>"+
+		   		"<span class='c4b2'>"+sessionStorage.getItem("wnumber")+"</span>"+
+		   		"<span class='c4b3'>+</span>"+
+		   "</div>"+
+		   "<div class='c4c'>"+
+		   		"<span class='c4c1'>￥</span>"+
+		   		"<span class='c4c2'>"+sessionStorage.getItem("wsum")+"</span>"+
+		   	   " <span class='c4c3' style='font-size: 12px;color: #FF0000;'>已优惠￥</span>"+
+		   		"<span class='c4c4' style='font-size: 12px;color: #FF0000;'>46.00</span>"+
+		   	"</div>"+
+		   "<div class='c4d'>"+
+		   		"<span>×</span>"+
+		   	"</div>"+
+		   "</div>"
+		  
+		   ).appendTo($(".cartItems"));
+		   $("<div class='b2a'>"+
+		   	   " <span class='b2a1'>已选择</span>"+
+		   	    "<span class='b2a2' style='padding: 0 5px;'>"+sessionStorage.getItem("wnumber")+"</span>"+
+		   	    "<span class='b2a3'>件商品</span>"+
+		   	 " </div>"+
+		   	  "<div class='b2b'>"+
+		   	  	"<span class='b2b1' style='margin-left: 8px;'>共计</span>"+
+		   	  "	<span class='b2b2' style='padding: 0 5px;'>"+sessionStorage.getItem("wnumber")+"</span>"+
+		   	  	"<span class='b2b3'>件商品</span>"+
+		   	 " </div>"
+		   	).appendTo($(".b2"));
+		   	$(
+		   	"<div class='b3a'>"+
+		   		"<span class='b3b1'>应付总额：&nbsp;￥</span>"+
+		   		"<span class='b3b2' style='padding: 0 5px;font-size: 18px;'>"+sessionStorage.getItem("wsum")+"</span>"+
+		   	"</div>"+
+		   	"<div class='b3b'>"+
+		   		"<span class='b3b1'>应付总额不含运费</span>"+
+		   	"</div>"
+		   	).appendTo($(".b3"));
+		   
+		   if(!sessionStorage.getItem("wimg")){
+		   	$(".cartItems").remove();
+		    $(".b2a2").html(0);
+		    $(".b2b2").html(0);
+		    $(".b3b2").html(0.00);
+		   }
+		   });
+</script>
+<script src="js/cartPage.js" type="text/javascript" charset="utf-8"></script>

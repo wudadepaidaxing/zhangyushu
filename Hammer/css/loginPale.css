@@ -1,0 +1,316 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+body {
+	background-color: #ededed;
+}
+#login{
+	height: 643px;
+	width: 436px;
+	background-color:#FFFFFF;
+	border-radius: 12px;
+	position: absolute;
+	border: 1px solid #dadada;
+	left: 550px;
+	top: 30px;
+	box-shadow: 0 9px 30px -6px rgba(0,0,0, .2);
+}
+#login .loginLogo{
+	width: 436px;
+	height: 167px;
+	position: relative;
+	background: url(../img/smartisan_4ada7fecea.png) no-repeat;
+	background-position-x:center ;
+	margin-top: 20px;
+}
+#login .loginLogo  h4{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	color: #333;
+	font-weight: 400;
+	font-size: 20px;
+}
+#login .loginCheck{
+	position: relative;
+	height: 401px;
+	width: 436px;
+	margin-top: 40px;
+	/* background-color: #5079D9; */
+}
+/* 登录 */
+#login .loginForm{
+	position: absolute;
+	width: 356px;
+	height: 379px;
+	/* background-color: #8ADD37; */
+	left:43px ;
+}
+/* 第一个二级联动 */
+#login .loginForm  .form1{
+	background-color: #FFF;
+	box-shadow: 0 3px 5px -4px rgba(0,0,0, .4) inset;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	font-size: 18px;
+	height: 46px;
+	line-height: 46px;
+	opacity: .618;
+	position: relative;
+	transition:opacity .3s ease-in ;
+	margin-bottom: 15px;
+}
+#login .loginForm .form1 .pinter{
+	display: block;
+	height: 46px;
+	float: left;
+	position: relative;
+	text-align: center;
+	width: 46px;
+	background-color: #f8f8f8;
+	border-radius: 6px 0 0 6px;
+}
+#login .loginForm .form1 .articl{
+	float: left;
+	display: block;
+	font-size: 16px;
+	left: 3px;
+	width: 112px;
+	/* background-color: #0077AA; */
+	top: 0;
+	padding-left: 3px;
+	cursor: default;
+}
+#login .loginForm .form1 input{
+	position: absolute;
+	font-size: 16px;
+	right: 20px;
+}
+#login .loginForm .form1 .change img{
+	display: block;
+	height: 12px;
+	width: 8px;
+	cursor: pointer;
+	position: absolute;
+	top:17px;
+	right: 5px;
+}
+#login .loginForm .form1 .articalChange{
+	position: absolute;
+	font-size: 16px;
+	right: 20px;
+}
+/* 第二个输入框 */
+#login .loginForm  .form2{
+	background-color: #FFF;
+	box-shadow: 0 3px 5px -4px rgba(0,0,0, .4) inset;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	font-size: 18px;
+	height: 46px;
+	line-height: 46px;
+	opacity: .618;
+	margin-bottom: 15px;
+	position: relative;
+	transition:opacity .3s ease-in ;
+}
+#login .loginForm .form2 .pinter{
+	display: block;
+	height: 46px;
+	float: left;
+	position: relative;
+	text-align: center;
+	width: 46px;
+	/* background-color: #55A532; */
+	border-radius: 6px 0 0 6px;
+}
+#login .loginForm .form2 .number{
+	float: left;
+	display: block;
+	font-size: 18px;
+	left: 3px;
+	width: 50px;
+	background-color: #f8f8f8;
+	top: 0;
+	padding-left: 3px;
+	cursor: default;
+}
+#login .loginForm .form2 input{
+	height: 40px;
+	width: 230px;
+	position: absolute;
+	font-size: 16px;
+	color: #333;
+	top: 4px;
+	outline: none;
+	border: none;
+	z-index: 10;
+}
+/* 密码框 */
+#login .loginForm  .form3{
+	background-color: #FFF;
+	box-shadow: 0 3px 5px -4px rgba(0,0,0, .4) inset;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	font-size: 18px;
+	height: 46px;
+	line-height: 46px;
+	opacity: .618;
+	position: relative;
+	transition:opacity .3s ease-in ;
+}
+#login .loginForm .form3 .pinter{
+	display: block;
+	height: 46px;
+	float: left;
+	position: relative;
+	text-align: center;
+	width: 46px;
+	background-color: #f8f8f8;
+	border-radius: 6px 0 0 6px;
+}
+#login .loginForm .form3 input{
+	height: 40px;
+	margin-left: 15px;
+	width: 230px;
+	position: absolute;
+	font-size: 16px;
+	color: #333;
+	top: 4px;
+	outline: none;
+	border: none;
+	z-index: 10;
+}
+/* 注册栏 */
+#login .loginForm .part{
+	position: relative;
+	margin-top: 15px;
+}
+#login .loginForm  .part .p1{
+	display: block;
+	position: absolute;
+	overflow: hidden;
+	left: 5px;
+	height: 20px;
+	width: 20px;
+	
+}
+#login .loginForm  .part .p1 img{
+	position: absolute;
+	overflow: hidden;
+	top: -20px;
+	
+	
+}
+#login .loginForm  .part .p2{
+	position: absolute;
+	font-size: 12px;
+	left: 25px;
+	cursor: pointer;
+	color: #999;
+}
+#login .loginForm  .part .p3{
+	position: absolute;
+	font-size: 12px;
+	right: 100px;
+	cursor: pointer;
+	color: #5079D9;
+	padding-right: 5px;
+	border-right: 1px solid #969696;
+}
+#login .loginForm  .part .p4{
+	position: absolute;
+	font-size: 12px;
+	/* border-right: 1px solid #969696; */
+	right: 70px;
+	cursor: pointer;
+	color: #5079D9;
+	/* padding-right: 5px; */
+	/* padding-left: 5px; */
+}
+#login .loginForm  .part .p5{
+	position: absolute;
+	font-size: 12px;	
+	border-left: 1px solid #969696;
+	right: 0px;
+	cursor: pointer;
+	color: #5079D9;
+	padding-left: 5px;
+}
+/* 登录按钮 */
+#login .button{
+	height: 48px;
+	width: 356px;
+	background-color: #93B2F7;
+	position: absolute;
+	text-align: center;
+	cursor: pointer;
+	line-height:48px ;
+	top: 460px;
+	left: 43px;
+	font-size: 18px;
+	font-weight: 900;
+	border-radius: 8px;
+	color: #F5F2F0;
+}
+#login .other{
+	position: absolute;
+	width: 356px;
+	top: 530px;
+	left:43px ;
+	border-bottom: 1px solid #969896;
+	padding-bottom: 20px;
+}
+#login .other .o1{
+	font-size: 12px;
+	color: #969696;
+}
+#login .other .o3{
+	display: block;
+	cursor: pointer;
+	font-size: 12px;
+	position: absolute;
+	color: #969696;
+    right: 0;
+    top: 0;
+}
+#login .other .o3:hover{
+	color: #5079D9;
+}
+#login  .bot{
+	position: absolute;
+	top: 585px;
+	left: 100px;
+	font-size: 12px;
+}
+#formation{
+	position: absolute;
+	top: 700px;
+	left: 640px;
+}
+#formation .f1{
+	color: #666666;
+	font-size: 12px;
+}
+#formation .f2{
+	margin-top: 10px;
+	position: absolute;
+	left: 40px;
+	color: #666666;
+	font-size: 12px;
+}

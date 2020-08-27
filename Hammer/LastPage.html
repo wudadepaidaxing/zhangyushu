@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="LastPage.css"/>
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/secondPale.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+	</head>
+	<body>
+		<!-- 引入头部 -->
+		<div id="header">
+			
+		</div>
+		<!-- 引入二级菜单 -->
+		<div id="second">
+			
+		</div>
+		<!-- 侧边栏 -->
+		<div id="list">
+			<div class="picture">
+				<img src="img/avatar.png" >
+			</div>
+			<span class="user">周一 508</span>
+		
+			<ul>
+				<li>我的订单</li>
+				<li>售后服务</li>
+				<li>我的优惠</li>
+				<li>账户资料</li>
+				<li>收货地址</li>
+			</ul>
+		</div>
+		<!-- 大框 -->
+		<div id="box">
+			<div class="lan">
+				<span class="artical">我的订单</span>
+				<select  class="sec">
+					<option value="">最近三个月</option>
+					<option value="">今年内</option>
+					<option value="">2019年</option>
+					<option value="">2018年</option>
+					<option value="">2017年</option>
+					<option value="">2016年</option>
+				</select>
+				<select  class="sea">
+					<option value="">全部状态</option>
+					<option value="">未完成</option>
+					<option value="">已完成</option>
+					<option value="">已关闭</option>
+				</select>
+			</div>
+			<div class="pinter">
+				<img src="img/ia_100000140.png" >
+				
+			</div>
+			<div class="arr">
+				<h3>您目前还没有此类订单</h3>
+			</div>
+			<input type="button" value="返回首页" />
+		</div>
+		<!-- 引入脚步 -->
+		<div id="footer" style="margin-top: 700px;">
+			
+		</div>
+	</body>
+</html>
+<script src="js/new_file.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#header").load("header.html");
+		$("#second").load("secondPale.html");
+		$("#footer").load("footer.html");
+		$("input").click(function(){
+			location.href = "firstPage.html";
+		})
+	})
+	
+</script>

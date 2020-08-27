@@ -1,0 +1,203 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: middle;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size:16px;
+	font-weight:normal;
+	}
+/* 二级菜单 */
+#allSecondMenu{
+	height: 74px;
+	width: 100%;
+	background-color:white;
+	margin: 0 auto;
+}
+
+#allSecondMenu #secondMenu {
+	height: 74px;
+	width: 1220px;
+	margin: 0 auto;
+}
+
+/* 设置标题栏 */
+#allSecondMenu #secondMenu ul li {
+	float: left;
+	line-height: 74px;
+	margin-right: 30px;
+}
+
+#allSecondMenu #secondMenu ul li a {
+	font-size: 14px;
+	cursor: pointer;
+	color: #666;
+}
+
+#allSecondMenu #secondMenu ul li a:hover {
+	color: #5079d9;
+}
+
+/* 搜索框 */
+#allSecondMenu #secondMenu #search {
+	position: relative;
+	float: right;
+	margin-top: 18px;
+	border: 1px solid #f1f1f1;
+	border-radius: 20px;
+	height: 36px;
+	width: 324px;
+	cursor: pointer;
+}
+
+#allSecondMenu #secondMenu #search #firstSearchChild {
+	position: absolute;
+	cursor: pointer;
+	left: 10px;
+	top: 7px;
+	height: 20px;
+	width: 20px;
+	background-image: url(../img/ia_100000376.png);
+}
+
+#allSecondMenu #secondMenu #search input {
+	position: absolute;
+	left: 40px;
+	height: 34px;
+	width: 270px;
+	border: none;
+	font-size: 14px;
+	font-weight: 600;
+	color: #969696;
+	outline: 0;
+}
+
+#allSecondMenu #secondMenu #search #additional {
+	position: absolute;
+	right: 10px;
+	top: 7px;
+}
+#allSecondMenu #secondMenu #search #additional .add {
+	display: inline-block;
+	line-height: 20px;
+	text-align: center;
+	height: 20px;
+	width: 70px;
+	border: 1px solid #93b2f7;
+	border-radius: 10px;
+	font-weight: 700;
+	color: #5079D9;
+	font-size: 12px;
+}
+
+#allSecondMenu #secondMenu #search #additional .add1 {
+	display: inline-block;
+	line-height: 20px;
+	text-align: center;
+	height: 20px;
+	width: 70px;
+	border: 1px solid #93b2f7;
+	border-radius: 10px;
+	font-weight: 700;
+	color: #5079D9;
+	font-size: 12px;
+	background: #e5efff;
+}
+
+#allSecondMenu #secondMenu #search #additional .add2 {
+	display: inline-block;
+	line-height: 20px;
+	text-align: center;
+	height: 20px;
+	width: 70px;
+	border: 1px solid #b6cc7b;
+	border-radius: 10px;
+	font-weight: 700;
+	color: #8add37;
+	font-size: 12px;
+	background: #f7fae1;
+}
+/* 搜索框的功能cs */
+#SearchUnder{
+	background-color: #FFFFFF;
+	height:300px ;
+	width: 300px;
+	border: 1px solid rgba(0,0,0, .1);
+	border-radius: 4px;
+	position: absolute;
+	right: 170px;
+	cursor: pointer;
+	display: none;
+}
+#SearchUnder li{
+	width: 300px;
+	margin-top: 15px;
+	padding-left: 15px;
+	
+}
+#SearchUnder li a{
+	color: #969696;a
+	
+}
+#SearchUnder li a:hover{
+	color: #5079D9;
+}
+
+#SecondSelect{
+	height: 270px;
+	width: 100%;
+	background-color:transparent;
+	position: absolute;
+	border-top: 1px solid rgba(0,0,0, .1);
+	z-index: 88;
+}
+#SecondSelect .SecondSelectBody{
+	height: 270px;
+	width: 100%;
+	display: none;
+	background-color: #FFFFFF;
+	margin: 0 auto;
+	padding-left: 200px;
+}
+#SecondSelect .SecondSelectBody .homePage1 li {
+	/* background-color: red; */
+	float: left;
+	cursor: pointer;
+	padding-top: 30px;
+	margin-left:100px;
+}
+#SecondSelect .SecondSelectBody .homePage1 li .s1{
+	font-size: 12px;
+	padding-left: 10px;
+	color: #999999;
+}
+#SecondSelect .SecondSelectBody .homePage1 li p{
+	padding-top: 10px;
+	height: 40px;
+	position: relative;
+}
+#SecondSelect .SecondSelectBody .homePage1 li p img{
+	display: block;
+	float: left;
+	height: 40px;
+	width: 40px;
+}
+#SecondSelect .SecondSelectBody .homePage1 li p span{
+	float: left;
+    line-height: 40px;
+	width: 28px;
+	position: absolute;
+	font-size: 14px;
+	color: #000;
+}

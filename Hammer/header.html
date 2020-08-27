@@ -1,0 +1,113 @@
+<!-- 头部 -->
+		<div id="head">
+	    	<div id="Status">
+	    		<div class="head">
+	    			<img src="img/avatar.png">
+	    		</div>
+	    		<div class="artical">
+	    			<p>写到没头发</p>
+	    		</div>
+	    		<ul>
+	    			<li class="head1">
+	    				<a href="">我的订单</a>
+	    			</li>
+	    			<li class="head1">
+	    				<a href="">售后服务</a>
+	    			</li>
+	    			<li class="head1">
+	    				<a href="">我的优惠</a>
+	    			</li>
+	    			<li class="head1">
+	    				<a href="">账户资料</a>
+	    			</li>
+	    			<li class="head1">
+	    				<a href="">收货地址</a>
+	    			</li>
+	    			<li class="head1">
+	    				<a href="">退出登录</a>
+	    			</li>
+	    		</ul>
+	    	</div>
+	    	
+	    </div>
+		<div id="header">
+			<div id="header_1">
+				<img src="img/ia_100000369.png" >
+			</div>
+			<div id="header_2">
+				<ul>
+					<li><a href="">在线商城</a></li>
+					<li><a href="">坚果Pro 3</a></li>
+					<li><a href="">坚果Pro 2S</a></li>
+					<li><a href="">坚果 TNT 工作站</a></li>
+					<li><a href="">Smartisan OS</a></li>
+					<li><a href="">欢喜云</a></li>
+					<li><a href="">应用</a></li>
+					<li><a href="">论坛</a></li>
+					<li><a href="">荣誉与奖项</a></li>
+					<li><a href="">加入我们</a></li>
+					<li><a href="">下载APP</a></li>
+				</ul>
+			</div>
+			<div id="header_3">
+				<a href="" id="s1"></a>
+				<a href="" id="s2"></a>
+			</div>
+			
+		</div>
+		<script src="js/new_file.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+					
+				$("#s1").click(function(){
+					console.log(sessionStorage.getItem("id"))
+					if(sessionStorage.getItem("id")){
+						alert("无需重复登录");
+						// $("#s1").html("无需重复登录");
+						// console.log("heie")
+					}else{
+						location.href = "loginPage.html";
+					}
+					return false
+				});
+				$("#s2").click(function(){
+					console.log(sessionStorage.getItem("id"))
+					if(sessionStorage.getItem("id")){
+			            window.open("cartPage.html") ;
+					}else{
+						location.href = "loginPage.html";
+					}
+					return false
+				});
+				// 提示框
+				$(".head1").eq(5).click(function(){
+					sessionStorage.clear();
+					return false
+				})
+				$("#s1").mouseenter(function(){
+					if(sessionStorage.getItem("id")){
+						$("#Status").css({display:"block"});
+					 }
+				 })
+				$("#Status").mouseleave(function(){
+					$("#Status").css({display:"none"});
+				})
+				
+				
+				$("#head #Status ul .head1 ").eq(0).click(function(){
+					location.href = "LastPage.html"
+					return false
+				})
+				
+			});
+		
+			// $("#s2").click(function(){
+			// 	if(sessionStorage.getItem["id"]){
+					
+			// 	}else{
+			// 		location.href = "loginPage.html";
+			// 	}
+			// 	return false
+			// })
+			
+		</script>
