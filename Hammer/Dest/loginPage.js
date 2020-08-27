@@ -1,0 +1,1 @@
+"use strict";$(function(){$("button").click(function(){$.getJSON("list.json",function(n){$.each(n,function(n,t){$("div").append(t.id)})})})});
